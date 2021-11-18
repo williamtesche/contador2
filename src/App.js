@@ -18,10 +18,6 @@ export default function Contador() {
     setNumero(numero  - 1)
   }
 
-
-  
-
-
   return <div>
       <h1>contador</h1>
       <p>{numero}</p>
