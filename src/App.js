@@ -1,12 +1,37 @@
+import { useState } from "react";
 
-import './App.css';
+export default function Contador({nome}) {
 
-function App() {
+  const [numero,setNumero] = useState(0)
+
+  function mais() {
+    setNumero(numero + 1)
+  }
+
+
+
+  function menos() {
+    setNumero(numero - 1)
+  }
+
+
+
+  function reset() {
+    setNumero(0)
+  }
+
+
+
+
   return (
-    <div className="App">
-      aaaa
-    </div>
+    <>
+     <h1>{nome}</h1>
+     <p>{numero}</p>
+
+     <button onclick={mais}>mais</button>
+     <button onclick={reset}>reset</button>
+     <button onclick={menos}>menos</button>
+    </>
   );
 }
 
-export default App;
