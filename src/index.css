@@ -45,4 +45,5 @@ div{
 button:hover{
     color: black;
     background-color: red;
+    border: 1px solid gray;
 }

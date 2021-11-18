@@ -8,6 +8,7 @@ export default function Contador() {
 
   function mais(){
     setNumero(numero  + 1)
+    console.log(numero)
   }
 
   function reset(){
@@ -21,9 +22,9 @@ export default function Contador() {
   return <div>
       <h1>contador</h1>
       <p>{numero}</p>
-      <button onClick={mais}>mais</button>
-      <button onClick={reset}>reset</button>
-      <button onClick={menos}>menos</button>
+      <button onClick={mais}>Mais</button>
+      <button onClick={reset}>Reset</button>
+      <button onClick={menos}>Menos</button>
       
   </div>
 
